@@ -12,7 +12,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="zh-TW">
       <head>
-        <title>宏愛動物醫院</title>
+        <title>宏愛犬貓專科醫院</title>
         <meta charSet="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       </head>
@@ -25,7 +25,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
 
         {/* 🔹 頁尾 */}
         <footer className="bg-blue-100 text-center py-6 mt-12 text-gray-700">
-          <p>宏愛動物醫院 版權所有 © {new Date().getFullYear()} All Rights Reserved.</p>
+          <p>宏愛犬貓專科醫院 版權所有 © {new Date().getFullYear()} All Rights Reserved.</p>
         </footer>
 
       </body>

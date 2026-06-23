@@ -148,13 +148,13 @@ export default function Home() {
           <div className="text-lg flex flex-col items-center gap-2">
             <p className="flex items-center gap-2">
               <FaMapMarkerAlt className="text-blue-500" />
-              地址：701台南市東區東寧路331號
+              地址：648雲林縣西螺鎮大園里光復東路59號
             </p>
             <p className="flex items-center gap-2">
               <FaPhone className="text-green-500" />
-              電話：06-2385816
+              電話：05-5877081
             </p>
-            <p className="flex items-center gap-1 whitespace-nowrap">
+            {/* <p className="flex items-center gap-1 whitespace-nowrap">
               <span>LINE線上諮詢：</span>
               <a
                 href="https://line.me/R/ti/p/@kkp1060t"
@@ -164,7 +164,7 @@ export default function Home() {
               >
                 @kkp1060t
               </a>
-            </p>
+            </p> */}
           </div>
 
           {/* 門診時間 */}
@@ -172,12 +172,12 @@ export default function Home() {
             <div className="flex-1 text-lg text-gray-800">
               <h3 className="text-2xl font-bold text-[#5A4032] mb-4">門診時間</h3>
               <ul className="leading-relaxed space-y-1">
-                <li>星期一：10:30 – 20:00</li>
-                <li>星期二：10:30 – 20:00</li>
-                <li>星期三：10:30 – 20:00</li>
-                <li>星期四：10:30 – 20:00</li>
-                <li>星期五：10:30 – 20:00</li>
-                <li>星期六：10:30 – 20:00</li>
+                <li>星期一：09:00 – 12:00，14:00 - 21:00</li>
+                <li>星期二：09:00 – 12:00，14:00 - 21:00</li>
+                <li>星期三：09:00 – 12:00，14:00 - 21:00</li>
+                <li>星期四：09:00 – 12:00，14:00 - 21:00</li>
+                <li>星期五：09:00 – 12:00，14:00 - 21:00</li>
+                <li className="text-red-700 font-bold">星期六：休息</li>
                 <li className="text-red-700 font-bold">星期日：休息</li>
               </ul>
             </div>
@@ -188,9 +188,10 @@ export default function Home() {
         {/* 🔹 Google 地圖嵌入 */}
         <div className="w-full flex justify-center mt-8">
           <iframe
-            title="Google Maps - 宏愛動物醫院"
-            className="w-full max-w-[1100px] h-[450px] rounded-lg shadow-lg border-0"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3672.91216180514!2d120.2278546!3d22.9902573!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e77f00a3c3c5d%3A0x9374c24e03593dff!2z5a6P5oSb5YuV54mp6Yar6ZmiLeeKrOiyk-WwiOenkemGq-eZguOAgeeKrOiyk-e-juWuueOAgeeKrOiyk-iXpeWxgO-8iOaXqeS4iuaZguauteeci-iouu-8jOiri-WFiOaPkOWJjemgkOe0hO-8iQ!5e0!3m2!1szh-TW!2stw!4v1750209555840!5m2!1szh-TW!2stw"
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3650.562907720335!2d120.4703782!3d23.798574299999995!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346eb5741d623913%3A0x9f97488b4a394dd!2z5a6P5oSb54qs6LKT5bCI56eR6Yar6Zmi!5e0!3m2!1szh-TW!2stw!4v1782181331629!5m2!1szh-TW!2stw"
+            width={600}
+            height={450}
+            style={{ border: 0 }}
             allowFullScreen
             loading="lazy"
             referrerPolicy="no-referrer-when-downgrade"
